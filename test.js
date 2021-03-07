@@ -25,15 +25,15 @@ async function test() {
     // return tickers
 }
 
-test()
+// test()
 
 async function webSocket() {
     const url = ''
 
-    const WebSocket = require('websocket')
+    const WebSocket = require('ws')
 
     const APIKEY = process.env.API_KEY
-    const websocket = new WebSocket('websockets://socket.polygon.io/forex')
+    const websocket = new WebSocket('wss://socket.polygon.io/forex')
 
     // ex1,
     const forexList = [
@@ -62,3 +62,4 @@ async function webSocket() {
     websocket.on('error', console.log)
 }
 
+webSocket()

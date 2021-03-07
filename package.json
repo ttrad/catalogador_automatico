@@ -5,7 +5,8 @@
   "main": "test.js",
   "dependencies": {
     "axios": "^0.21.1",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "ws": "^7.4.4"
   },
   "devDependencies": {},
   "scripts": {
